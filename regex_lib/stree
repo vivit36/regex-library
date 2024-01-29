@@ -1,0 +1,56 @@
+digraph stree {
+	node [color=lightblue2 style=filled]
+	N1 [label=<P<BR /><FONT POINT-SIZE="10" COLOR="red">Order=1 N=False F={1} L={1}</FONT>>]
+	N2 [label=<l<BR /><FONT POINT-SIZE="10" COLOR="red">Order=2 N=False F={2} L={2}</FONT>>]
+	N3 [label=<.<BR /><FONT POINT-SIZE="10" COLOR="red">Order=None N=False F={1} L={2}</FONT>>]
+	N3 -> N1
+	N3 -> N2
+	N4 [label=<a<BR /><FONT POINT-SIZE="10" COLOR="red">Order=3 N=False F={3} L={3}</FONT>>]
+	N5 [label=<.<BR /><FONT POINT-SIZE="10" COLOR="red">Order=None N=False F={1} L={3}</FONT>>]
+	N5 -> N3
+	N5 -> N4
+	N6 [label=<y<BR /><FONT POINT-SIZE="10" COLOR="red">Order=4 N=False F={4} L={4}</FONT>>]
+	N7 [label=<.<BR /><FONT POINT-SIZE="10" COLOR="red">Order=None N=False F={1} L={4}</FONT>>]
+	N7 -> N5
+	N7 -> N6
+	N8 [label=<G<BR /><FONT POINT-SIZE="10" COLOR="red">Order=5 N=False F={5} L={5}</FONT>>]
+	N9 [label=<.<BR /><FONT POINT-SIZE="10" COLOR="red">Order=None N=False F={1} L={5}</FONT>>]
+	N9 -> N7
+	N9 -> N8
+	N10 [label=<a<BR /><FONT POINT-SIZE="10" COLOR="red">Order=6 N=False F={6} L={6}</FONT>>]
+	N11 [label=<.<BR /><FONT POINT-SIZE="10" COLOR="red">Order=None N=False F={1} L={6}</FONT>>]
+	N11 -> N9
+	N11 -> N10
+	N12 [label=<m<BR /><FONT POINT-SIZE="10" COLOR="red">Order=7 N=False F={7} L={7}</FONT>>]
+	N13 [label=<.<BR /><FONT POINT-SIZE="10" COLOR="red">Order=None N=False F={1} L={7}</FONT>>]
+	N13 -> N11
+	N13 -> N12
+	N14 [label=<e<BR /><FONT POINT-SIZE="10" COLOR="red">Order=8 N=False F={8} L={8}</FONT>>]
+	N15 [label=<.<BR /><FONT POINT-SIZE="10" COLOR="red">Order=None N=False F={1} L={8}</FONT>>]
+	N15 -> N13
+	N15 -> N14
+	N16 [label=<D<BR /><FONT POINT-SIZE="10" COLOR="red">Order=9 N=False F={9} L={9}</FONT>>]
+	N17 [label=<o<BR /><FONT POINT-SIZE="10" COLOR="red">Order=10 N=False F={10} L={10}</FONT>>]
+	N18 [label=<.<BR /><FONT POINT-SIZE="10" COLOR="red">Order=None N=False F={9} L={10}</FONT>>]
+	N18 -> N16
+	N18 -> N17
+	N19 [label=<t<BR /><FONT POINT-SIZE="10" COLOR="red">Order=11 N=False F={11} L={11}</FONT>>]
+	N20 [label=<.<BR /><FONT POINT-SIZE="10" COLOR="red">Order=None N=False F={9} L={11}</FONT>>]
+	N20 -> N18
+	N20 -> N19
+	N21 [label=<a<BR /><FONT POINT-SIZE="10" COLOR="red">Order=12 N=False F={12} L={12}</FONT>>]
+	N22 [label=<.<BR /><FONT POINT-SIZE="10" COLOR="red">Order=None N=False F={9} L={12}</FONT>>]
+	N22 -> N20
+	N22 -> N21
+	N23 [label=<#<BR /><FONT POINT-SIZE="10" COLOR="red">Order=13 N=True F=set() L=set()</FONT>>]
+	N24 [label=<|<BR /><FONT POINT-SIZE="10" COLOR="blue">1</FONT><FONT POINT-SIZE="10" COLOR="red"><BR />N=True F={9} L={12}</FONT>>]
+	N24 -> N22
+	N24 -> N23
+	N25 [label=<.<BR /><FONT POINT-SIZE="10" COLOR="blue">0</FONT><FONT POINT-SIZE="10" COLOR="red"><BR />N=False F={1} L={8, 12}</FONT>>]
+	N25 -> N15
+	N25 -> N24
+	N26 [label=<$<BR /><FONT POINT-SIZE="10" COLOR="red">Order=14 N=False F={14} L={14}</FONT>>]
+	N27 [label=<.<BR /><FONT POINT-SIZE="10" COLOR="red">Order=None N=False F={1} L={14}</FONT>>]
+	N27 -> N25
+	N27 -> N26
+}
